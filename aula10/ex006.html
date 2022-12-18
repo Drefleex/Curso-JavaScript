@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTOS DOM</title>
+    <style>
+        #area{
+            font: normal 20pt Arial;
+            background-color: darkgreen;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrada()" onmouseout="out()" onmousemove="mousemove()">
+        Interaja...
+    </div>
+    <script>
+      function clicar(){
+         var a = window.document.getElementById('area');
+         a.innerText = 'Clicou'
+      }
+      function entrada(){
+        var b = window.document.getElementById('area')
+        b.style.backgroundColor = 'yellow'
+        b.style.color = 'rgb(245,29,207,96)'
+        b.innerText = 'Você aprendeu um comando novo'
+        b.style.width = '600px'
+      }
+      function out(){
+        var c = window.document.getElementById('area');
+        c.style.backgroundColor = 'blue'
+        c.style.width = '500px'
+        c.innerHTML = 'Você está mandando bem!!'
+      }
+      function mousemove(){
+            var d  = window.document.getElementById('area')
+            d.style.backgroundColor = 'gray'
+            d.style.width = '700px'
+            d.style.height = '700px'
+            d.style.borderRadius = '5px'
+            d.innerText = 'O mouse está se movendo'
+            d.style.transitionDuration = '3000ms' 
+      }
+      
+    </script>
+</body>
+</html>
