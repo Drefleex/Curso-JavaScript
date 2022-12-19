@@ -5,13 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nacionalidade</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: darkslategrey;
+            color: white;
+        }
+        #main{
+            border: solid 1px rgb(87, 87, 32);
+            background-color: rgb(109, 109, 86);
+            width: 100vw;
+            height: 200px;
+            margin: auto;
+        }
+        h1{
+            text-align: center;
+            margin-bottom:10px;
+            margin-top : 10px
+        }
+        
+        input#txtp1{
+            display: block;
+            width: 240px;
+            margin:auto;
+            border: solid 1px ;
+            border-radius: 7px;
+            padding: 10px;
+        }
+        
+        input#btn{
+            font: bold 10pt Arial;
+            padding: 5px;
+            margin: auto;
+            display: block;
+            margin-top: 10px;
+            width: 85px;
+            border: solid 1px rgba(0, 0, 255, 0.305);
+            border-radius: 7px ;
+        }
+        div#res{
+            font: 600 12pt Arial;
+            width: 240px;
+            display: block;
+            text-align: center;
+            background-color: rgb(72, 74, 77);
+            border: solid 1px black;
+            border-radius: 5px;
+            margin: auto;
+            margin-top: 10px;
+            padding: 10px;
+        }
+        
+    </style>
 </head>
 <body>
-    <h1>PAÍS DE ORIGEM</h1>
-    <input type="text" name="txtp1" id="txtp1">
-    <input type="button" value="Verificar" onclick="verificar()">
-    <div id="res">
-
+    <div id="main">
+        <h1>PAÍS DE ORIGEM</h1>
+        <input type="text" name="txtp1" id="txtp1">
+        <input  id="btn" type="button" value="Verificar" onclick="verificar()">
+        <div id="res">
+        </div>
     </div>
     <script>
         
