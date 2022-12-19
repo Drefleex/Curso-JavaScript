@@ -18,36 +18,29 @@
     </style>
 </head>
 <body>
-    <div id="area" onclick="clicar()" onmouseenter="entrada()" onmouseout="out()" onmousemove="mousemove()">
+    <div id="area">
         Interaja...
     </div>
     <script>
+      var a = window.document.getElementById('area')
+      a.addEventListener('click', clicar);
+      a.addEventListener('mouseenter', entrar)
+      a.addEventListener('mouseleave', sair)
+
+      
       function clicar(){
-         var a = window.document.getElementById('area');
-         a.innerText = 'Clicou'
+       a.innerText = 'Clicou'
+       a.style.backgroundColor = 'red'
       }
-      function entrada(){
-        var b = window.document.getElementById('area')
-        b.style.backgroundColor = 'yellow'
-        b.style.color = 'rgb(245,29,207,96)'
-        b.innerText = 'Você aprendeu um comando novo'
-        b.style.width = '600px'
+      function entrar(){
+        a.innerText = 'Entrou'
       }
-      function out(){
-        var c = window.document.getElementById('area');
-        c.style.backgroundColor = 'blue'
-        c.style.width = '500px'
-        c.innerHTML = 'Você está mandando bem!!'
+
+      function sair(){
+       a.innerText ='Saiu'
+       a.style.backgroundColor = 'green'
       }
-      function mousemove(){
-            var d  = window.document.getElementById('area')
-            d.style.backgroundColor = 'gray'
-            d.style.width = '700px'
-            d.style.height = '700px'
-            d.style.borderRadius = '5px'
-            d.innerText = 'O mouse está se movendo'
-            d.style.transitionDuration = '3000ms' 
-      }
+     
       
     </script>
 </body>

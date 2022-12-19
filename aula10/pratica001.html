@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando os números</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            font: normal 18pt Arial;;
+            text-align: center;
+            margin-bottom: 15px;
+            margin-top: 10px;
+            color: white;
+        }
+        div{
+            text-align: center;
+        }
+        div#res{
+            font: normal 16pt Arial;
+            color: white;
+        }
+        div#caixa{
+            width: 500px;
+            height: 500px;
+            background-color: rgb(20, 130, 20);
+            border: solid 2px black;
+            margin: auto;
+        }
+        div > input{
+            width: 100px;
+        }
+        p{
+           margin-left: -230px;
+           color: white
+        }
+
+    </style>
+</head>
+<body>
+    <div id="caixa">
+        <h1>CALCULADORA</h1>
+        <div >
+            <input type="number" name="numb1" id="numb1"> + 
+            <input type="number" name="numb2" id="numb2">
+            <input type="button" name="btn1" id="btn1"value="Somar" onclick="somar()">
+            <p><strong><br>RESULTADO:</strong></p>
+            <div id="res"></div>
+        </div>
+    </div>
+    
+   <script>
+    function somar(){
+        var n1 = document.querySelector("input#numb1")
+        var n2 = document.querySelector("input#numb2")
+        var res = document.querySelector("div#res")
+        var s1 = Number(n1.value)
+        var s2 = Number(n2.value)
+        var s = s1 + s2
+        res.innerHTML = `A soma de ${s1} + ${s2} é igual a ${s}`
+    }
+   </script>
+</body>
+</html>
