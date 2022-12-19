@@ -5,18 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DETRAN</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+       div#main{
+          border: 1px solid black;
+          width: 720px;
+          background-color: rgb(210, 221, 157);
+          margin: auto;
+       }
+       h1{
+        font: normal 20pt Arial;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        color:rgb(2, 82, 82);
+       }
+       span{
+        display: block;
+        font:normal 17pt Arial;
+        margin-bottom:10px;
+        text-align: center;
+        color:firebrick;
+       }
+       input#txtvel{
+        width: 45px;
+        height: 15px;
+        border: solid 1px firebrick;
+        border-radius: 5px;
+        padding: 5px;
+       }
+       input#inp2{ 
+        font: bold 9pt Arial;
+        width: 100px;
+        height: 25px;
+        background-color: rgb(251, 225, 225);
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+        border: solid 1px rgb(162, 46, 46);
+        border-radius: 5px 
+ }
+     div#res{
+         font: normal 15pt Arial;
+         
+         width: 420px;
+         margin: auto;
+         text-align: justify;
+         margin-bottom: 25px;
+    }
+    </style>
 </head>
 <body>
-    <h1>Sistema de multas</h1>
-    Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> Km/h
-    <input type="button" value="Verificar" onclick="calcular()">
-    <div id="res">
-
+    <div id="main">
+        <h1>Sistema de multas</h1>
+        <span>Velocidade do carro: <input  type="number" name="txtvel" id="txtvel" min="0"> Km/h</span> 
+        <input id = "inp2" type="button" value="Verificar" onclick="calcular()">
+        
+        <div id="res">
+        </div>
     </div>
     
 
     <script>
-       function calcular(){
+
+    
+        
+    function calcular(){
         var txtv = window.document.querySelector('input#txtvel')
         var res = window.document.querySelector('div#res')
         var vel = Number(txtv.value)
@@ -24,16 +81,21 @@
         var velMid = 90
         var multaMax = 1550
         var multaMid = 600
-        res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel} Km/h</strong>.</p>`
+        res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel} Km/h</strong>.</p><br>`
         if(vel > velMax) {
-             res.innerHTML += `A velocidade limite nessa estrada é ${velMax} Km/h, você foi <strong>multado em ${multaMax.toLocaleString('pt-BR' , {style: 'currency' , currency: 'BRL'})} reais. </strong>`
+             res.innerHTML += `A velocidade limite nessa estrada é ${velMax} Km/h, você foi <strong>multado em ${multaMax.toLocaleString('pt-BR' , {style: 'currency' , currency: 'BRL'})} reais. </strong><br><br>`
         } else if(vel > velMid){
-            res.innerHTML += `A velocidade limite nessa estrada é ${velMid}Km/h, <strong> você foi multado em ${multaMid.toLocaleString('pt-Br',{style : 'currency', currency: 'BRL'})}</strong>`
+            res.innerHTML += `A velocidade limite nessa estrada é ${velMid}Km/h, <strong> você foi multado em ${multaMid.toLocaleString('pt-Br',{style : 'currency', currency: 'BRL'})}</strong><br><br>`
+        } else if(vel == 0 ){
+               res.innerHTML += `<strong> <ERROR!> Você digitou 0 ou nada!</strong> Digite um valor acima de 0  para fazer a verificação!!<br><br>`
+        }else if(vel == ''){
+             res.innerHTML += ``
         } else {
-            res.innerHTML += 'Muito bem.Boa viagem!'
+            res.innerHTML += 'Muito bem.Boa viagem!<br><br>'
         }
-        res.innerHTML += '<p>Dirija sempre com sinto de segurança</p>'
+        res.innerHTML += '<p><strong>>> Dirija sempre com cinto de segurança <<</strong></p>'
     }
+  
     </script>
 </body>
 </html>
