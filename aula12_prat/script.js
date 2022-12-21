@@ -1,5 +1,4 @@
 function carregar(){
-    let tit = document.querySelector('h1#tit')
     let txt = document.querySelector('div#txt')
     let img = document.querySelector('img#img')
     let msg = document.querySelector('div#msg')
