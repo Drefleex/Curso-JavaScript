@@ -3,8 +3,7 @@ function carregar(){
     let img = document.querySelector('img#img')
     let msg = document.querySelector('div#msg')
     agora = new Date()
-    //hora = agora.getHours()
-    hora = 14
+    hora = agora.getHours()
     txt.innerHTML = `Agora são ${hora} horas`
     if(hora >= 5 && hora <= 12){
         msg.innerHTML = 'Tenha um ótimo dia'
