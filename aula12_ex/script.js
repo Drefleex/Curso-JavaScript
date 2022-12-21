@@ -18,6 +18,7 @@
          img.src = 'imagens/noite.png'
          msg1.innerHTML = 'Tenha uma ótima noite'
          document.body.style.backgroundColor = '#05152E'
+         
    }
  }
  

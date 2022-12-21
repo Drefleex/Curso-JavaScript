@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font: normal 12pt Arial;
+    background-color: rgb(239, 239, 240);
+}
+h1#tit{
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+body > section#main{
+    background-color:white;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(59, 92, 103, 0.485);
+    margin: auto;
+}
+
+body > section > div#txt{
+    font: bold 13pt Arial;
+    color: black;
+    text-align: center;
+    padding: 10PX;
+    
+}
+
+body > section > div > img#img{
+    display: block;
+    width: 220px;
+    margin: auto;
+}
+
+body > section > div#msg{
+    font: bold 13pt Arial;
+    text-align: center;
+    padding: 20px;
+    color: black;
+}
+
+body > footer#footer {
+    text-align: center;
+    font: normal 12pt Arial;
+    font-style: italic;
+    color: white;
+    padding: 10px;
+}
