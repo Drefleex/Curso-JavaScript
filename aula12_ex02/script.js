@@ -27,6 +27,7 @@ function verificar(){
                 img.setAttribute('src' , 'imagens/adulto_homem.png')
              } else {
                 res.innerHTML = `Detectamos um idoso com ${idade} anos.`
+
                 img.setAttribute('src' , 'imagens/idoso_homem.png')
              }
         } else if(fsex[1].checked){
@@ -41,7 +42,7 @@ function verificar(){
                 img.setAttribute('src' , 'imagens/jovem_mulher.png')
              } else if(idade < 50){
                 //adulto
-                res.innerHTML = `Detectamos um mulher adulta com ${idade} anos.`
+                res.innerHTML = `Detectamos uma mulher adulta com ${idade} anos.`
                 img.setAttribute('src' , 'imagens/adulta_mulher.png')
              } else {
                 res.innerHTML = `Detectamos uma idosa com ${idade} anos.`
