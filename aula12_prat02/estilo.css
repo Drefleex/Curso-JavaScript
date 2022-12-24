@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color:  rgb(4, 55, 72);
+}
+
+h1{
+    font: normal 23pt Arial;
+    text-align: center;
+    color: white;
+    margin: 10px;
+}
+
+section{
+    font: bold 12pt Arial;
+    background-color: white;
+    width: 500px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 3px 8px rgba(144, 238, 144, 0.291);
+}
+p{
+    padding: 5px;
+}
+input#btn{
+    display: block;
+    margin: auto;
+    width: 90px;
+}
+div#res{
+    margin: 10px;
+}

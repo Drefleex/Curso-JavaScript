@@ -40,3 +40,11 @@ input#btn{
 div#res{
     margin-top:20px;
 }
+
+footer{
+    font: normal 10pt Arial;
+    font-style: italic;
+    color: white;
+    text-align: center;
+    margin-top:15px;
+}
