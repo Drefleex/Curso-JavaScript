@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAMOS CONTAR</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <h1>Vamos Contar</h1>
+    <section id="main">
+        <div>
+           <p>Inicio: 
+            <input type="number" name="cont" id="cont" min="0">
+           </p>
+           <p>Fim: 
+              <input type="number" name="end" id="end" min="0">
+           </p>
+           <p>Passo:
+              <input type="number" name="jum" id="jum" min="0">
+           </p>
+           <p>
+            <input type="button" value="Contar" id="btn" onclick="contar()">
+           </p>
+        </div>
+        <div id="res">
+           Preparando a contagem...
+        </div>
+    </section>
+    <footer>
+        © DevDreFlep
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
