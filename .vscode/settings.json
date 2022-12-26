@@ -12,8 +12,10 @@
         "divtxt",
         "fatorial",
         "fsex",
+        "impar",
         "inputtxtn",
         "morningday",
+        "parimp",
         "pdia",
         "radsex",
         "stetic",
@@ -22,5 +24,8 @@
         "txtp",
         "txtv",
         "txtvel"
-    ]
+    ],
+    "liveServer.settings.CustomBrowser": "chrome",
+    "liveServer.settings.fullReload": true,
+    "liveServer.settings.wait": 0
 }
