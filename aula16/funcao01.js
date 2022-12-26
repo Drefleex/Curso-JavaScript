@@ -5,5 +5,5 @@ function parimp(n){
         return 'impar'
     }
 }
-var res = parimp(10)
+var res = parimp(11)
 console.log(res)
