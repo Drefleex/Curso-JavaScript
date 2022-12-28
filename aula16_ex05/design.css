@@ -31,7 +31,8 @@ p{
 }
 #btn {
     display: block;
-    width: 60px;
+    width: 70px;
+    height: 25px;
     margin: auto;
     margin-top: 10px;
 }
@@ -39,8 +40,10 @@ p{
     font:normal 15px Arial;
 }
 #flist{
-    width: 150px;
+    width: 250px;
 }
+
+  
 
 footer{
     text-align: center;
